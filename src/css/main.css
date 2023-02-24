@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i,
+address,
+em {
+    font-style: normal;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.Header {
+    background: #f2f2f2;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.Header .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header .inner ul {
+    display: flex;
+    gap: 40px;
+}
+
+.TopBanner {
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    transition: 0.5s;
+}
+
+.TopBanner.on {
+    height: 0;
+}
+
+.TopBanner .btn {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin: 0 0 0 600px;
+    transform: translate(-100%, 0);
+    font-size: 30px;
+}
+
+
+
+.MainContent {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.MainContent h2 {
+    font-size: 30px;
+    font-weight: 700;
+
+    margin: 0 0 10px 0;
+}
+
+.MainContent p {
+    font-size: 15px;
+    font-weight: 500;
+
+    margin: 0 0 30px 0;
+}
+
+.MainContent .inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.MainContent .inner>* {
+    height: 200px;
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+}
+
+.MainContent .inner em {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    background: tomato;
+    color: #fff;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.MainVisual {
+    color: #fff;
+}
+
+.MainVisual .itm {
+    position: relative;
+}
